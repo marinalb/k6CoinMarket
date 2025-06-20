@@ -8,8 +8,9 @@ The test script sends GET requests to the `/exchange/assets` endpoint of the Coi
 
 ## 🔧 Requirements
 
-- [K6 installed](https://k6.io/docs/getting-started/installation/)
-- A valid CoinMarketCap API key
+- [K6 installed](https://grafana.com/docs/k6/latest/get-started/)
+- For MacOS use `brew install k6`
+- A valid CoinMarketCap API key - for this particular demo
 
 2. Run the test:
 
