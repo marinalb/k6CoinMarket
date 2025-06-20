@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: k6-load-test
+  namespace: default
+spec:
+  template:
+    spec:
+      containers:
+        - name: k6
+          image: marinalb/k6-js:1.0  
+          command: ["k6", "run", "k6.js"]  
+      restartPolicy: Never
+  backoffLimit: 0
